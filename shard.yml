@@ -1,0 +1,17 @@
+name: risk-calc
+version: 0.1.0
+
+authors:
+  - Braeden Mollot <3mollot@gmail.com>
+
+targets:
+  risk-calc:
+    main: src/risk-calc.cr
+
+crystal: 0.20.5
+
+license: MIT
+
+dependencies:
+  libui:
+    github: fusion/libui.cr
