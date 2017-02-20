@@ -1,0 +1,33 @@
+windows:
+- window: risk calc
+  name: risk-calc
+  children:
+  - vertical_box:
+    children:
+    - horizontal_box:
+      children:
+      - label: Attacker
+        stretched: 1
+      - label: Defender
+        stretched: 1
+    - horizontal_separator:
+    - horizontal_box:
+      name: log_box
+      stretched: 1
+    - horizontal_separator:
+    - horizontal_box:
+      children:
+      - spinbox: 0, 100
+        name: attack_count
+        stretched: 1
+      - horizontal_separator:
+      - spinbox: 0, 100
+        name: defend_count
+        stretched: 1
+    - progress_bar:
+      name: tide_bar
+    - button: Fight
+      name: fight_btn
+    - horizontal_separator:
+    - button: Clear
+      name: clear_btn
